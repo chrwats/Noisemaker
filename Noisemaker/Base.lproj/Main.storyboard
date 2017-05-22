@@ -22,45 +22,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-WS-Xpn">
-                                <rect key="frame" x="57" y="135" width="98" height="54"/>
-                                <state key="normal" title="Guitar"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUM-Dd-4s1">
+                                <rect key="frame" x="197" y="131" width="141" height="104"/>
+                                <color key="backgroundColor" red="0.82878906249999995" green="0.13089415669999999" blue="0.80745625600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="Q4d-6j-eqz"/>
+                                    <constraint firstAttribute="width" constant="141" id="Udc-ga-i29"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Applause" image="ApplauseIcon">
+                                    <color key="titleShadowColor" white="0.8076171875" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdr-zY-OKQ"/>
+                                    <action selector="playSoundWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTX-pf-3b2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMn-fb-8zb">
-                                <rect key="frame" x="57" y="280" width="98" height="54"/>
-                                <state key="normal" title="Monster"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMn-fb-8zb">
+                                <rect key="frame" x="41" y="269" width="141" height="104"/>
+                                <color key="backgroundColor" red="0.82878906249999995" green="0.13089415669999999" blue="0.80745625600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="1rm-bE-qde"/>
+                                    <constraint firstAttribute="width" constant="141" id="4Xy-jF-P6L"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Monster" image="MonsterIcon">
+                                    <color key="titleShadowColor" white="0.8076171875" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w51-1S-Y9B"/>
+                                    <action selector="playSoundWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4k-mW-qYj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-35-Ku7">
-                                <rect key="frame" x="213" y="280" width="98" height="54"/>
-                                <state key="normal" title="Bubbles"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-35-Ku7">
+                                <rect key="frame" x="197" y="269" width="141" height="104"/>
+                                <color key="backgroundColor" red="0.82878906249999995" green="0.13089415669999999" blue="0.80745625600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="3er-3r-O6k"/>
+                                    <constraint firstAttribute="width" constant="141" id="Gx7-H7-t9K"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Bubbles" image="BubblesIcon">
+                                    <color key="titleShadowColor" white="0.8076171875" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYB-h3-YGy"/>
+                                    <action selector="playSoundWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmw-hi-2Db"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUM-Dd-4s1">
-                                <rect key="frame" x="213" y="135" width="98" height="54"/>
-                                <state key="normal" title="Applause"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-WS-Xpn">
+                                <rect key="frame" x="41" y="131" width="141" height="104"/>
+                                <color key="backgroundColor" red="0.82878906250000006" green="0.13089415667310775" blue="0.80745625601656124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="3Xb-dY-nci"/>
+                                    <constraint firstAttribute="width" constant="141" id="d9b-4s-RmX"/>
+                                </constraints>
+                                <state key="normal" title="Guitar" image="GuitarIcon">
+                                    <color key="titleShadowColor" white="0.8076171875" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pvf-N5-9vg"/>
+                                    <action selector="playSoundWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ey-cl-JZQ"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-Px-BNI">
+                                <rect key="frame" x="0.0" y="36" width="375" height="70"/>
+                                <state key="normal" title="Button" image="Title"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="UUM-Dd-4s1" secondAttribute="trailing" constant="48" id="7ay-nI-mIy"/>
-                            <constraint firstItem="xzf-WS-Xpn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="8iD-ef-0JP"/>
-                            <constraint firstItem="eMn-fb-8zb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="260" id="WFn-9C-fE1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ewc-35-Ku7" secondAttribute="trailing" constant="48" id="cH2-13-SVe"/>
-                            <constraint firstItem="UUM-Dd-4s1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="hRs-lQ-d2G"/>
-                            <constraint firstItem="Ewc-35-Ku7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="260" id="knr-Qq-xKm"/>
-                            <constraint firstItem="xzf-WS-Xpn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="yIT-Ln-Bn4"/>
-                            <constraint firstItem="eMn-fb-8zb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="yhE-5o-UvD"/>
+                            <constraint firstItem="eMn-fb-8zb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="FiD-AY-zjW"/>
+                            <constraint firstItem="xzf-WS-Xpn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="Hfw-B3-E9L"/>
+                            <constraint firstItem="xzf-WS-Xpn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="Hze-s3-tEs"/>
+                            <constraint firstItem="eMn-fb-8zb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="KOa-Rp-4gh"/>
+                            <constraint firstItem="UUM-Dd-4s1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="KsL-cD-Cw5"/>
+                            <constraint firstItem="gc2-Px-BNI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="R2d-sI-h23"/>
+                            <constraint firstItem="Ewc-35-Ku7" firstAttribute="top" secondItem="UUM-Dd-4s1" secondAttribute="bottom" constant="34" id="U9L-zv-3rc"/>
+                            <constraint firstItem="gc2-Px-BNI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aY2-cL-KHf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UUM-Dd-4s1" secondAttribute="trailing" constant="21" id="dNB-bH-nhc"/>
+                            <constraint firstItem="Ewc-35-Ku7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="i9p-WT-oYa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ewc-35-Ku7" secondAttribute="trailing" constant="21" id="ja2-3c-Gt8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -69,4 +107,11 @@
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ApplauseIcon" width="55" height="62"/>
+        <image name="BubblesIcon" width="43" height="70"/>
+        <image name="GuitarIcon" width="60" height="65"/>
+        <image name="MonsterIcon" width="63" height="76"/>
+        <image name="Title" width="150" height="75"/>
+    </resources>
 </document>

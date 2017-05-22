@@ -9,22 +9,15 @@
 import UIKit
 import AVFoundation
 
-var player: AVAudioPlayer?
+let noiseMaker = NoiseMaker()
 
 class ViewController: UIViewController {
     
-    
-    
-    @IBAction func playSound(_ sender: UIButton) {
-        if let buttonName = sender.currentTitle {
-            playAudio(buttonName: buttonName)
-        }
+    @IBAction func playSound(sender: UIButton) {
+        noiseMaker.play(sender.tag)
+        print(sender.tag)
     }
     
-    func playAudio(buttonName: String) {
-        if let url = Bundle.main.url(forResource: buttonName, withExtension: "wav") {player = try? AVAudioPlayer(contentsOf: url)
-            player?.play()}
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
